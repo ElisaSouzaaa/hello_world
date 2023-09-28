@@ -12,4 +12,24 @@ public class HelloWorldController {
 	public String helloworld() {
 		return "Hello World!!!";
 	}
+
+	@GetMapping ("/BSM-Generation")
+	public String bsmGeneration() {
+		return "Persistência,\n"
+				+ "Mentalidade de crescimento,\n"
+				+ "Orientação ao futuro,\n"
+				+ "Responsabilidade pessoal,\n"
+				+ "Trabalho em Equipe,\n"
+				+ "Comunicação,\n"
+				+ "Orientação ao Detalhes,\n"
+				+ "Proatividade.";
+	}
+	
+	@GetMapping ("/objetivos-aprendizagem")
+	public String objetivosAprendizagem() {
+		return "Melhorar a gestão de tempo,\n"
+				+ "Criar um road map mais objetivo para conseguir um estágio,\n"
+				+ "Continuar trabalhando na comunicação,\n"
+				+ "Melhorar minha atenção aos detalhes";
+	}
 }
